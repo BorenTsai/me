@@ -153,16 +153,17 @@ body {
 
 /* About Section */
 .about-box {
-	margin-left: 		200px;
-	margin-right: 		200px;
-	margin-top:			50px;
+	margin-left: 		20%;
+	margin-right: 		20%;
+	margin-top:			5%;
 	position: 			relative;
+	background:			#fdfaf0;
 }
 
 .about-block {
 	min-width: 			250px;
 	position: 			relative;
-	background-color:	white;
+	background-color:	#fdfaf0;
 	line-height: 		1.4;
 	margin: 			0px auto;
 	padding: 			24px;
@@ -171,7 +172,7 @@ body {
 
 .About {
 	text-align: 		center;
-	margin-bottom: 		50px;
+	margin-bottom: 		10%;
 }
 
 .about-section {
@@ -181,13 +182,13 @@ body {
 
 .about-photo{
 	overflow: 			hidden;
-	width: 				300px;
-	height: 			500px;
-	transform: 			translate(10%, 5%)
+	width: 				40%;
+	height: 			50%;
+	transform: 			translate(10%, 0%)
 	min-width: 			100%;
 	object-fit: 		cover;
 }
 
 .about-content {
-	transform: translate(45%, -2300%);
+	transform: translate(45%, -1900%);
 }
