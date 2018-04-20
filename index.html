@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Boren Tsai</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="..assets/js/script.js"></script>
+	</head>
+	<body>
+		<div class="hero_image">
+			<div id="menu-container" onclick="menu_action(this)">
+				<span class="bars" onclick="openNav()">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</span>
+				<div id="navigation" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="#">About</a>
+						<a href="#">Portfolio</a>
+						<a href="#">Contact</a>
+					</div>
+				</div>
+			</div>
+			<script>
+				function menu_action(x) {
+    				x.classList.toggle("change");
+				}
+			</script>
+			<div id="hello-box">
+				<div class="hello-text">
+					<div class="hello">Hello, I'm</div>
+				</div>
+			</div>
+			<div id="boren-box">
+				<div class="boren-text">
+					<div class="MEEE">蔡博仁</div>
+				</div>
+			</div>
+			<script>
+				function openNav() {
+    				document.getElementById("navigation").style.width = "100%";
+				}
+
+				function closeNav() {
+    				document.getElementById("navigation").style.width = "0%";
+				}
+			</script>
+		</div>
+		<section id="about" class="about-block">
+			<div class="about-box">
+				<h1 class="About">About</h1>
+					<div class="about-section">
+						<img src="assets/img/Phohoto.jpg" class='about-photo'>
+						<div class='about-content'>
+							<p>Hello</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		
+		<section id="portfolio">
+			<h1>Portfolio</h1>
+		</section>
+		
+		<section id="contact">
+			<h1>Contact</h1>
+		</section>
+	</body>
+</html>
