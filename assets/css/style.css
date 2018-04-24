@@ -3,7 +3,9 @@ body, html {
 }
 body {
 	margin: 			0;
+	background-color: 	white;
 }
+
 
 /* Navigation Bar */
 #menu-container {
@@ -152,10 +154,13 @@ body {
 }
 
 /* About Section */
+#about {
+	margin-bottom: 20%;
+}
 .about-block {
 	min-width: 			250px;
 	position: 			relative;
-	background-color:	#fffdf3;
+	background-color:	white;
 	line-height: 		1.4;
 	margin: 			0px auto;
 	padding: 			24px;
@@ -167,17 +172,12 @@ body {
 	margin-right: 		20%;
 	margin-top:			5%;
 	position: 			relative;
-	background:			#fffdf3;
+	background:			white;
 }
 
 .About {
 	text-align: 		center;
 	margin-bottom: 		10%;
-}
-
-.about-section {
-	border-color: 		black;
-	border-width: 		0.5px;
 }
 
 .about-photo{
@@ -193,6 +193,182 @@ body {
 }
 .parafo{
 	position: absolute;
-	transform: translate(10%);
+	transform: translate(10%, -5%);
 	display: inline-block;
 }
+
+/*Portfolio Section*/
+#portfolio {
+	margin-bottom: 20%;
+}
+}
+.portfolio-block {
+	min-width: 			250px;
+	position: 			relative;
+	background-color:	white;
+	line-height: 		1.4;
+	margin: 			0px auto;
+	padding: 			24px;
+	margin-bottom: 		36px;
+	display: block;
+
+}
+
+.Portfolio {
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.portfolio-section {
+	justify-content: center;
+	min-height: 350px;
+	display: grid;
+	grid-gap: 0;
+	grid-template-areas: "M M M M R_1 R_1 S_1 S_1"
+						 "M M M M R_1 R_1 S_1 S_1"
+						 "M M M M R_1 R_1 T_1 T_2"
+						 "M M M M R_1 R_1 T_3 ."
+						 "R_2 R_2 S_2 S_2 T_4 T_5 . ."
+						 "R_2 R_2 S_2 S_2 T_6 . . ."
+						 "R_2 R_2 T_7 T_8 . . . ."
+						 "R_2 R_2 T_9 . . . . .";
+	grid-template-columns: repeat(8, 100px);
+	grid-template-rows: repeat(8, 100px);
+}
+
+.pic {
+	height: auto;
+	width: auto;
+	display: block;
+	overflow: hidden;
+	margin-top: 2.5px;
+	margin-left: 2.5px;
+	margin-right: 2.5px;
+}
+
+
+.portfolio-section > div {
+	justify-content: center;
+	overflow: hidden;
+}
+
+.main {
+	grid-area: M;
+	overflow: hidden;
+}
+
+.rect_1 {
+	grid-area: R_1;
+	overflow: hidden;
+}
+
+.rect_2 {
+	grid-area: R_2;
+	overflow: hidden;
+}
+
+.subsquare_1 {
+	grid-area: S_1;
+	overflow: hidden;
+}
+
+.subsquare_2 {
+	grid-area: S_2;
+	overflow: hidden;
+}
+.tin-square_1 {
+	grid-area: T_1;
+	overflow: hidden;
+}
+
+.tin-square_2 {
+	grid-area: T_2;
+	overflow: hidden;
+}
+
+.tin-square_3 {
+	grid-area: T_3;
+	overflow: hidden;
+}
+
+.tin-square_4 {
+	display: grid;
+	grid-area: T_4;
+	overflow: hidden;
+}
+
+.tin-square_5 {
+	grid-area: T_5;
+	overflow: hidden;
+}
+
+.tin-square_6 {
+	grid-area: T_6;
+	overflow: hidden;
+}
+
+.tin-square_7 {
+	grid-area: T_7;
+	overflow: hidden;
+}
+
+.tin-square_8 {
+	grid-area: T_8;
+	overflow: hidden;
+}
+
+.tin-square_9 {
+	grid-area: T_9;
+	overflow: hidden;
+}
+
+/* Contact Section */
+#contact {
+	margin-bottom: 20%;
+	text-align: center;
+}
+
+.contact-block {
+	min-width: 			250px;
+	position: 			relative;
+	background-color:	white;
+	line-height: 		1.4;
+	margin: 			0px auto;
+	padding: 			24px;
+	display: block;
+}
+
+.Contact{
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.centerpiece {
+	margin: auto;
+}
+
+.icon-row {
+	width: 100%;
+	height: 66px;
+	display: inline-block;
+}
+
+.icon-container {
+	margin: 0 2px;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	display: inline-block;
+}
+
+
+.icon-container img {
+	position: relative
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	margin: 0 10px 10px 0;
+}
+
+
