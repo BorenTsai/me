@@ -1,12 +1,18 @@
 body, html {
 	height: 			100%;
 }
+
 body {
 	margin: 			0;
-	background-color: 	white;
 	font-family: 'IBM Plex Serif';
+	opacity: 1;
+	transition: 7s opacity;
 }
 
+body.fade-out {
+	opacity: 0;
+	transition: none;
+}
 
 /* Navigation Bar */
 #menu-container {
