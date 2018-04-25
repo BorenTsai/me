@@ -27,4 +27,11 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
+	//jQuery Function Number 6(hover)
+	$('.icon').hover(function () {
+		$(this).css('transform', 'scale(' + (1.05) + ')');
+	}, function() {
+		$(this).css('transform', 'scale(' + 1 + ')')
+	})
 });

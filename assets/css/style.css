@@ -380,6 +380,7 @@ body.fade-out {
 	width: 60px;
 	height: 60px;
 	margin: 0 10px 10px 0;
+	transition: 0.5s;
 }
 
 
