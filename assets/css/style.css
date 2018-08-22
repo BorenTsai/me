@@ -6,7 +6,7 @@ body {
 	margin: 			0;
 	font-family: 'IBM Plex Serif';
 	opacity: 1;
-	transition: 7s opacity;
+	transition: 5s opacity;
 }
 
 body.fade-out {
@@ -110,17 +110,35 @@ body.fade-out {
 }
 /* Background Image */
 .hero_image {
-	position:			relative;
-	height: 			100vh;
-	background-image: 	url('../img/hero_image.png');
+	height:				100vh;
+	width:				100vw;
+	overflow:			hidden;
+	position:			fixed;
+	z-index: 			0;
+}
+
+/*.hero_image {
+	width:				100%;
+	transform:			scale(1);	
 	background-position:center;
 	background-attachment: fixed;
 	background-repeat: 	no-repeat;
 	background-size: 	cover;
+}*/
+
+.hero_section {
+	position:			relative;
+	height: 			100vh;
+	/*background-image: 	url('../img/hero_image.png');*/
+	background-position:center;
+	background-attachment: fixed;
+	background-repeat: 	no-repeat;
+	background-size: 	cover;
+	overflow:			hidden;
 	z-index: 			0;
 	min-width: 			700px;
+	/*transform:		scale(4);*/
 }
-
 
 #hello-box {
 	position:  			relative;
@@ -139,6 +157,7 @@ body.fade-out {
 	text-align:  		center;
 	color: 		 		white;
 	line-height: 		0.5;
+	z-index: 			-1;
 }
 
 #boren-box {
@@ -158,11 +177,15 @@ body.fade-out {
 	text-align:  		center;
 	color: 		 		white;
 	line-height: 		0.5;
+	z-index: 			-1;
 }
 
 /* About Section */
 #about {
-	margin-bottom: 20%;
+	padding-bottom: 	20%;
+	margin-bottom:		0%;
+	border-color:	white;
+	background-color: white;
 }
 .about-block {
 	min-width: 			250px;
@@ -200,16 +223,19 @@ body.fade-out {
 	border-width: 		3px;
 }
 .parafo{
-	position: absolute;
-	transform: translate(10%, -5%);
-	display: inline-block;
+	position: 			absolute;
+	transform: 			translate(10%, -5%);
+	display: 			inline-block;
 }
 
 /*Portfolio Section*/
 #portfolio {
-	margin-bottom: 20%;
+	border-color:	white;
+	background-color: white;	
+	padding-bottom:		20%;
+	margin-bottom: 		0%;
 }
-}
+
 .portfolio-block {
 	min-width: 			250px;
 	position: 			relative;
@@ -218,7 +244,7 @@ body.fade-out {
 	margin: 			0px auto;
 	padding: 			24px;
 	margin-bottom: 		36px;
-	display: block;
+	display: 			block;
 
 }
 
@@ -334,8 +360,11 @@ body.fade-out {
 
 /* Contact Section */
 #contact {
-	margin-bottom: 20%;
+	padding-bottom: 25%;
+	margin-bottom: 0%;
 	text-align: center;
+	background-color: white;
+	border-color: white;
 }
 
 .contact-block {

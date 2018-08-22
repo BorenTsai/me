@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		distanceFromTop = $(window).scrollTop();
 		if (distanceFromTop == 0) {
-			$(".hero_image").css("transform", "scale(" + 1 + ")");
+			$(".hero_image").css("transform", "scale(" - 1 - ")");
 		}
   		$(".hero_image").css("transform", 'scale(' + (1 + (distanceFromTop/pageHeight)) + ')');
   	});
