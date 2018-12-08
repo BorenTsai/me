@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	let pageHeight = $(window).height();
 	let distanceFromTop = 0;
 	$(window).scroll(function() {
@@ -8,9 +9,11 @@ $(document).ready(function() {
 		}
   		$(".hero_image").css("transform", 'scale(' + (1 + (distanceFromTop/pageHeight)) + ')');
   	});
+
 	$(function() {
 		$('body').removeClass('fade-out');
 	})
+
 	$('.scrollTo').click(function(){
 		var getElement = $(this).attr('href');
 		if ($(getElement).length){
@@ -21,6 +24,7 @@ $(document).ready(function() {
 		}
 		return false
 	})
+
 	
 	$(window).scroll(function() {
 		$('.pic').each( function(i) {
@@ -31,6 +35,7 @@ $(document).ready(function() {
 			}
 		});
 	});
+	
 	
 	$('.icon').hover(function () {
 		$(this).css('transform', 'scale(' + (1.05) + ')');
